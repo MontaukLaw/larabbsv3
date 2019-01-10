@@ -17,18 +17,14 @@
 </head>
 
 <body>
-{{-- route_class 是helpers自定义的函数 --}}
 <div id="app" class="{{ route_class() }}-page">
 
-    {{-- 引入导航栏 --}}
     @include('layouts._navbar')
 
     <div class="container">
 
-        {{-- 引入消息栏 --}}
         @include('common._messages')
 
-        {{-- 留下空间 放内容 --}}
         @yield('content')
 
     </div>
