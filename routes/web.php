@@ -45,3 +45,7 @@ Route::get('/users/{user}', 'UsersController@show')->name('users.show');
 Route::get('/users/{user}/edit', 'UsersController@edit')->name('users.edit');
 //Route::patch('/users/{user}', 'UsersController@update')->name('users.update');
 Route::put('/users/{user}', 'UsersController@update')->name('users.update');
+
+Route::get('categories','CategoriesController@index')->name('categories.index');
+
+
