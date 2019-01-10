@@ -4,22 +4,19 @@
 
 // Variables
 @import 'variables';
-
+@import "topic_body";
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
-// Fontawesome
+//font awesome
 @import '~@fortawesome/fontawesome-free/scss/fontawesome';
 @import '~@fortawesome/fontawesome-free/scss/regular';
 @import '~@fortawesome/fontawesome-free/scss/solid';
 @import '~@fortawesome/fontawesome-free/scss/brands';
-
 .navbar-laravel {
   background-color: #fff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
-
-/* universal */
 
 body {
   font-family: Helvetica, "Microsoft YaHei", Arial, sans-serif;
@@ -38,6 +35,10 @@ body {
   margin-top: 0px;
 }
 
+html {
+  position: relative;
+  min-height: 100%;
+}
 
 .footer {
   position: absolute;
@@ -66,11 +67,93 @@ body {
 .register-page {
   img.captcha {
     cursor: pointer;
-    border: 1px solid #ced4da;
     border-radius: 4px;
+    border: 1px solid #ced4da;
     padding: 3px;
   }
 }
 
+/* Topic Index Page */
+.topics-index-page, .categories-show-page {
+  .topic-list {
+    .nav>li>a {
+      position: relative;
+      display: block;
+      padding: 5px 14px;
+      font-size: 0.9em;
+    }
 
+    a {
+      color: #444444;
+    }
 
+    .meta {
+      font-size: 0.9em;
+      color: #b3b3b3;
+
+      a {
+        color: #b3b3b3;
+      }
+    }
+
+    .badge {
+      background-color: #d8d8d8;
+    }
+
+    hr {
+      margin-top: 12px;
+      margin-bottom: 12px;
+      border: 0;
+      border-top: 1px solid #dcebf5;
+    }
+  }
+}
+
+/* Add container and footer space */
+#app > div.container {
+  margin-bottom: 100px;
+}
+
+.simditor-body img {
+  max-width:100%;
+}
+
+.topics-show-page {
+
+  .card {
+    padding: 15px;
+
+    h1 {
+      margin: 0.4em auto 0.6em;
+      font-size: 28px;
+      line-height: 38px;
+    }
+  }
+}
+
+.topic-reply {
+  a {
+    color: inherit;
+  }
+
+  .meta {
+    font-size: .9em;
+    color: #b3b3b3;
+  }
+}
+
+/* 消息通知 */
+.notification-badge {
+  .badge {
+    font-size: 12px;
+    margin-top: 14px;
+  }
+
+  .badge-secondary {
+    background-color: #EBE8E8;
+  }
+
+  .badge-hint {
+    background-color: #d15b47 !important;;
+  }
+}
