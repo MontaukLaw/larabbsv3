@@ -49,3 +49,7 @@ Route::put('/users/{user}', 'UsersController@update')->name('users.update');
 Route::get('categories','CategoriesController@index')->name('categories.index');
 
 
+Route::resource('topics', 'TopicsController', ['only' => ['index', 'show', 'create', 'store', 'update', 'edit', 'destroy']]);
+
+
+
