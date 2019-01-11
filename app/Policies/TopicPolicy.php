@@ -9,12 +9,13 @@ class TopicPolicy extends Policy
 {
     public function update(User $user, Topic $topic)
     {
-        // return $topic->user_id == $user->id;
-        return true;
+        return $topic->user_id == $user->id || $user->id == 1;
+        //return true;
     }
 
     public function destroy(User $user, Topic $topic)
     {
-        return true;
+        return $topic->user_id == $user->id || $user->id == 1 || $user->id == 2;
+        //return true;
     }
 }
