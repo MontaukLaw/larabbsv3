@@ -6,6 +6,7 @@ use App\Models\Reply;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\ReplyRequest;
+use Auth;
 
 class RepliesController extends Controller
 {
@@ -30,10 +31,16 @@ class RepliesController extends Controller
 		return view('replies.create_and_edit', compact('reply'));
 	}
 
-	public function store(ReplyRequest $request)
+	public function store(ReplyRequest $request,Reply $reply)
 	{
-		$reply = Reply::create($request->all());
-		return redirect()->route('replies.show', $reply->id)->with('message', 'Created successfully.');
+        //$this->authorize('update', $reply);
+        $reply->topic_id =$request->topic_id;
+        $reply->fill($request->all());
+        $reply->user_id = Auth::id();
+		//$reply = Reply::create($request->all());
+        $reply->save();
+		return redirect()->back()->with('message', '保存好了');
+		//return redirect()->route('replies.show', $reply->id)->with('message', 'Created successfully.');
 	}
 
 	public function edit(Reply $reply)
