@@ -2,18 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="934c7aa8-e597-4050-a8c1-aae119b07cf4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/Handlers/SlugTranslateHandler.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/larabbsv3.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/larabbsv3.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/Topic.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Topic.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Observers/TopicObserver.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Observers/TopicObserver.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/topics/_topic_list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/topics/_topic_list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/users/_topics.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/users/_topics.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,18 +37,18 @@
           <entry key="JSON" value="10" />
           <entry key="JavaScript" value="3" />
           <entry key="Log" value="3" />
-          <entry key="PHP" value="140" />
+          <entry key="PHP" value="150" />
           <entry key="PLAIN_TEXT" value="5" />
           <entry key="SCSS" value="5" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key=".env file" value="21" />
+          <entry key=".env file" value="29" />
           <entry key="Blade" value="407" />
           <entry key="JSON" value="1" />
           <entry key="JavaScript" value="3" />
-          <entry key="PHP" value="1604" />
+          <entry key="PHP" value="1674" />
           <entry key="PLAIN_TEXT" value="45" />
           <entry key="SCSS" value="14" />
         </counts>
@@ -72,8 +66,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/Observers/TopicObserver.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="608">
-              <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
+            <state relative-caret-position="616">
+              <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
               <folding>
                 <element signature="e#33#54#0#PHP" expanded="true" />
               </folding>
@@ -82,76 +76,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TopicsController.php">
+        <entry file="file://$PROJECT_DIR$/app/Jobs/TranslateSlug.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-              <folding>
-                <element signature="e#40#61#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Policies/TopicPolicy.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="12" column="45" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Models/User.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="654">
-              <caret line="39" column="5" selection-start-line="39" selection-start-column="5" selection-end-line="39" selection-end-column="5" />
-              <folding>
-                <element signature="e#30#70#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/topics/show.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="541">
-              <caret line="65" column="31" selection-start-line="65" selection-start-column="31" selection-end-line="65" selection-end-column="31" />
-              <folding>
-                <element signature="e#2209#2239#0#HTML" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Handlers/SlugTranslateHandler.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1292">
-              <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-              <folding>
-                <element signature="e#134#156#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/topics/create_and_edit.blade.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="415">
-              <caret line="40" column="70" selection-start-line="40" selection-start-column="70" selection-end-line="40" selection-end-column="70" />
+            <state relative-caret-position="304">
+              <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
             </state>
           </provider>
         </entry>
@@ -169,7 +97,7 @@
         <entry file="file://$PROJECT_DIR$/app/Models/Topic.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="274">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
             </state>
           </provider>
         </entry>
@@ -186,6 +114,7 @@
       <find>categories.show</find>
       <find>category-&gt;nam</find>
       <find>topics.show</find>
+      <find>TopicObserver</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\zunly\Lavacode\larabbsv3</dir>
@@ -197,7 +126,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/resources/views/common/_user_info.php" />
         <option value="$PROJECT_DIR$/database/migrations/2019_01_09_155928_add_avatar_to_users_table.php" />
         <option value="$PROJECT_DIR$/database/factories/UserFactory.php" />
         <option value="$PROJECT_DIR$/resources/views/layouts/default.blade.php" />
@@ -222,7 +150,6 @@
         <option value="$PROJECT_DIR$/resources/views/topics/_topic_list.php" />
         <option value="$PROJECT_DIR$/resources/sass/_topic_body.scss" />
         <option value="$PROJECT_DIR$/resources/sass/app.scss" />
-        <option value="$PROJECT_DIR$/.env" />
         <option value="$PROJECT_DIR$/config/database.php" />
         <option value="$PROJECT_DIR$/resources/views/topics/_topic_list.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/categories/_navlink.php" />
@@ -244,10 +171,12 @@
         <option value="$PROJECT_DIR$/app/Policies/TopicPolicy.php" />
         <option value="$PROJECT_DIR$/resources/views/topics/show.blade.php" />
         <option value="$PROJECT_DIR$/app/Handlers/SlugTranslateHandler.php" />
-        <option value="$PROJECT_DIR$/app/Observers/TopicObserver.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/app/Models/Topic.php" />
         <option value="$PROJECT_DIR$/app/Http/Controllers/TopicsController.php" />
+        <option value="$PROJECT_DIR$/.env" />
+        <option value="$PROJECT_DIR$/app/Observers/TopicObserver.php" />
+        <option value="$PROJECT_DIR$/app/Jobs/TranslateSlug.php" />
       </list>
     </option>
   </component>
@@ -265,6 +194,7 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths>
       <path value="$PROJECT_DIR$/package.json" />
+      <path value="$PROJECT_DIR$/vendor/laravel/horizon/package.json" />
     </packageJsonPaths>
   </component>
   <component name="PackageJsonUpdateNotifier">
@@ -370,6 +300,9 @@
       <path value="$PROJECT_DIR$/vendor/mews/purifier" />
       <path value="$PROJECT_DIR$/vendor/ezyang/htmlpurifier" />
       <path value="$PROJECT_DIR$/vendor/overtrue/pinyin" />
+      <path value="$PROJECT_DIR$/vendor/predis/predis" />
+      <path value="$PROJECT_DIR$/vendor/laravel/horizon" />
+      <path value="$PROJECT_DIR$/vendor/cakephp/chronos" />
     </include_path>
   </component>
   <component name="ProjectFrameBounds">
@@ -430,6 +363,18 @@
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Requests" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="larabbsv3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="larabbsv3" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Jobs" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="larabbsv3" type="b2602c69:ProjectViewProjectNode" />
+              <item name="larabbsv3" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="Listeners" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="larabbsv3" type="b2602c69:ProjectViewProjectNode" />
@@ -499,73 +444,6 @@
               <item name="larabbsv3" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
               <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbsv3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbsv3" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbsv3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbsv3" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbsv3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbsv3" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="avatars" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbsv3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbsv3" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="avatars" type="462c0819:PsiDirectoryNode" />
-              <item name="201901" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbsv3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbsv3" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="avatars" type="462c0819:PsiDirectoryNode" />
-              <item name="201901" type="462c0819:PsiDirectoryNode" />
-              <item name="10" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbsv3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbsv3" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="topics" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbsv3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbsv3" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="topics" type="462c0819:PsiDirectoryNode" />
-              <item name="201901" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="larabbsv3" type="b2602c69:ProjectViewProjectNode" />
-              <item name="larabbsv3" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="uploads" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-              <item name="topics" type="462c0819:PsiDirectoryNode" />
-              <item name="201901" type="462c0819:PsiDirectoryNode" />
-              <item name="11" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="larabbsv3" type="b2602c69:ProjectViewProjectNode" />
@@ -704,15 +582,15 @@
       <option name="presentableId" value="Default" />
       <updated>1546912491681</updated>
       <workItem from="1546912492884" duration="27000" />
-      <workItem from="1546913297018" duration="60731000" />
+      <workItem from="1546913297018" duration="63011000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="60758000" />
+    <option name="totallyTimeSpent" value="63038000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="955" y="0" width="1580" height="1047" extended-state="0" />
+    <frame x="955" y="0" width="1580" height="1047" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24668436" />
@@ -744,55 +622,6 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/database/seeds/DatabaseSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="24" column="1" lean-forward="true" selection-start-line="24" selection-start-column="1" selection-end-line="24" selection-end-column="1" />
-          <folding>
-            <element signature="e#7#38#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/CategoriesTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="36" selection-start-line="36" selection-end-line="36" />
-          <folding>
-            <element signature="e#7#38#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/UsersTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="3" selection-start-line="3" selection-end-line="3" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/factories/TopicFactory.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="57">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/seeds/TopicsTableSeeder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="646">
-          <caret line="34" selection-start-line="34" selection-end-line="34" />
-          <folding>
-            <element signature="e#7#38#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/debugbar.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-741" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/sass/_topic_body.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="768">
@@ -876,13 +705,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/Request.php">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="532">
-          <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Requests/UserRequest.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -1047,33 +869,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Handlers/SlugTranslateHandler.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1292">
-          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
-          <folding>
-            <element signature="e#134#156#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="718">
-          <caret line="41" lean-forward="true" selection-start-line="41" selection-end-line="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Observers/TopicObserver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="608">
-          <caret line="32" column="76" selection-start-line="32" selection-start-column="76" selection-end-line="32" selection-end-column="76" />
-          <folding>
-            <element signature="e#33#54#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/web.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="598">
@@ -1084,17 +879,76 @@
     <entry file="file://$PROJECT_DIR$/app/Models/Topic.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="274">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Listeners/EmailVerified.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Http/Kernel.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="532">
+          <caret line="37" column="62" selection-start-line="37" selection-start-column="62" selection-end-line="37" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database/migrations/2019_01_11_151040_create_failed_jobs_table.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Observers/UserObserver.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Http/Controllers/TopicsController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        <state relative-caret-position="199">
+          <caret line="37" column="9" selection-start-line="34" selection-start-column="7" selection-end-line="37" selection-end-column="9" />
           <folding>
             <element signature="e#40#61#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/horizon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-399" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="18" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Handlers/SlugTranslateHandler.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-182">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/queue.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-19">
+          <caret line="32" column="13" selection-start-line="32" selection-start-column="9" selection-end-line="32" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Observers/TopicObserver.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="616">
+          <caret line="38" column="31" selection-start-line="38" selection-start-column="31" selection-end-line="38" selection-end-column="31" />
+          <folding>
+            <element signature="e#33#54#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/Jobs/TranslateSlug.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="304">
+          <caret line="22" column="20" selection-start-line="22" selection-start-column="20" selection-end-line="22" selection-end-column="20" />
         </state>
       </provider>
     </entry>
