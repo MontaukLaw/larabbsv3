@@ -5,6 +5,7 @@ namespace App\Observers;
 use App\Models\Topic;
 use App\Handlers\SlugTranslateHandler;
 use App\Jobs\TranslateSlug;
+use DB;
 
 // creating, created, updating, updated, saving,
 // saved,  deleting, deleted, restoring, restored
@@ -39,5 +40,11 @@ class TopicObserver
             dispatch(new TranslateSlug($topic));
             //$topic->slug = app(SlugTranslateHandler::class)->youdaoTranslate($topic->title);
         }
+    }
+
+    public function deleted(Topic $topic)
+    {
+        //删除的时候, 连带reply一起删除
+        DB::table('replies')->where('topic_id', $topic->id)->delete();
     }
 }
