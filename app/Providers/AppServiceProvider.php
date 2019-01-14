@@ -19,6 +19,7 @@ class AppServiceProvider extends ServiceProvider
 		\App\Models\Topic::observe(\App\Observers\TopicObserver::class);
 
         Carbon::setLocale('zh');
+
     }
 
     /**
