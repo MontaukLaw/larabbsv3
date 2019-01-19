@@ -33,4 +33,9 @@ class UsersController extends Controller
 
         return $this->response->created();
     }
+
+    public function me()
+    {
+        return $this->response->item($this->user(), new UserTransformer());
+    }
 }
