@@ -2,18 +2,18 @@
 
 namespace App\Models;
 
+use Tymon\JWTAuth\Contracts\JWTSubject;
 use Illuminate\Notifications\Notifiable;
-use Illuminate\Contracts\Auth\MustVerifyEmail;
-use Illuminate\Auth\MustVerifyEmail as MustVerifyEmailTrait;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Auth;
 use Spatie\Permission\Traits\HasRoles;
 
-class User extends Authenticatable implements MustVerifyEmail
+class User extends Authenticatable implements JWTSubject
 {
     use HasRoles;
 
-    use Notifiable, MustVerifyEmailTrait;
+    use Notifiable ;
+    //MustVerifyEmailTrait;
 
     use Notifiable {
         notify as protected laravelNotify;
@@ -41,7 +41,8 @@ class User extends Authenticatable implements MustVerifyEmail
      * @var array
      */
     protected $fillable = [
-        'name', 'email', 'password', 'introduction', 'avatar','phone'
+        'name', 'phone', 'email', 'password', 'introduction', 'avatar',
+        'weixin_openid', 'weixin_unionid'
     ];
 
     /**
@@ -73,5 +74,16 @@ class User extends Authenticatable implements MustVerifyEmail
         $this->notification_count = 0;
         $this->save();
         $this->unreadNotifications->markAsRead();
+    }
+
+    // Rest omitted for brevity
+    public function getJWTIdentifier()
+    {
+        return $this->getKey();
+    }
+
+    public function getJWTCustomClaims()
+    {
+        return [];
     }
 }
