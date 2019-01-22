@@ -118,6 +118,9 @@ $api->version('v1', [
     $api->get('topics', 'TopicsController@index')
         ->name('api.topics.index');
 
+    // 列出一个user所有的topics
+    $api->get('users/{user}/topics', 'TopicsController@userIndex')
+        ->name('api.users.topics.index');
 
     // 删除话题
     $api->delete('topics/{topic}', 'TopicsController@destroy')

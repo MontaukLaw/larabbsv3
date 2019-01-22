@@ -8,7 +8,7 @@ use App\Models\Topic;
 use Illuminate\Http\Request;
 use App\Transformers\TopicTransformer;
 use App\Http\Requests\Api\TopicRequest;
-
+use App\Models\User;
 
 class TopicsController extends Controller
 {
@@ -69,6 +69,13 @@ class TopicsController extends Controller
     {
         return $this->response->item($topic, new TopicTransformer())
             ->setStatusCode(201);
+    }
+
+    public function userIndex(Request $request, User $user)
+    {
+        //分5页
+        $topics = $user->topics()->recent()->paginate(5);
+        return $this->response->paginator($topics, new TopicTransformer());
     }
 
 }
