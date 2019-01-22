@@ -1,13 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="934c7aa8-e597-4050-a8c1-aae119b07cf4" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Api/TopicsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Api/TopicsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Policies/Policy.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Policies/Policy.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
-    </list>
+    <list default="true" id="934c7aa8-e597-4050-a8c1-aae119b07cf4" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -687,12 +681,12 @@
       <workItem from="1547204900819" duration="23528000" />
       <workItem from="1547419469607" duration="14963000" />
       <workItem from="1547696319565" duration="14965000" />
-      <workItem from="1548051129839" duration="21416000" />
+      <workItem from="1548051129839" duration="21879000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137910000" />
+    <option name="totallyTimeSpent" value="138373000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1173" y="1" width="1387" height="1047" extended-state="0" />
