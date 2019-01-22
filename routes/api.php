@@ -57,9 +57,14 @@ $api->version('v1', [
         // 第三方登录
         $api->post('socials/{social_type}/authorizations', 'AuthorizationsController@socialStore')
             ->name('api.socials.authorizations.store');
+
         // 登录
         $api->post('authorizations', 'AuthorizationsController@store')
             ->name('api.authorizations.store');
+
+        // 显示话题
+        $api->get('topics/{topic}', 'TopicsController@show')
+            ->name('api.topics.show');
     });
 
     $api->group([
