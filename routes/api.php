@@ -82,6 +82,14 @@ $api->version('v1', [
             // 图片资源
             $api->post('images', 'ImagesController@store')
                 ->name('api.images.store');
+
+            // 发布话题
+            $api->post('topics', 'TopicsController@store')
+                ->name('api.topics.store');
+
+            // 更新话题
+            $api->patch('topics/{topic}', 'TopicsController@update')
+                ->name('api.topics.update');
         });
     });
 
@@ -101,17 +109,10 @@ $api->version('v1', [
     $api->post('images', 'ImagesController@store')
         ->name('api.images.store');
 
-    // 发布话题
-    $api->post('topics', 'TopicsController@store')
-        ->name('api.topics.store');
-
     // 列出topic列表
     $api->get('topics', 'TopicsController@index')
         ->name('api.topics.index');
 
-    // 更新话题
-    $api->patch('topics/{topic}', 'TopicsController@update')
-        ->name('api.topics.update');
 
     // 删除话题
     $api->delete('topics/{topic}', 'TopicsController@destroy')

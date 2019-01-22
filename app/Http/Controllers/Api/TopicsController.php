@@ -14,6 +14,7 @@ class TopicsController extends Controller
 {
     public function store(TopicRequest $request, Topic $topic)
     {
+        //$this->authorize('update', $topic);
         $topic->fill($request->all());
         $topic->user_id = 1;
         //$topic->user_id = $this->user()->id;
@@ -26,7 +27,7 @@ class TopicsController extends Controller
 
     public function update(TopicRequest $request, Topic $topic)
     {
-        //$this->authorize('update', $topic);
+        $this->authorize('update', $topic);
 
         $topic->update($request->all());
         return $this->response->item($topic, new TopicTransformer());
