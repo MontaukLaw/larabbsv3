@@ -14,7 +14,6 @@ class NotificationsController extends Controller
 
     public function index()
     {
-
         // 获取登录用户的所有通知
         $notifications = Auth::user()->notifications()->paginate(20);
 

@@ -35,7 +35,9 @@ class TopicReplied extends Notification implements ShouldQueue
     {
         //return ['mail'];
         // 开启通知的频道
-        return ['database', 'mail'];
+        //return ['database', 'mail'];
+        return ['database'];
+
     }
 
     /**
@@ -83,7 +85,6 @@ class TopicReplied extends Notification implements ShouldQueue
             'topic_id' => $topic->id,
             'topic_title' => $topic->title,
         ];
-
 
     }
 
