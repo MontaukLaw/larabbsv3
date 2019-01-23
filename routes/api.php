@@ -65,6 +65,38 @@ $api->version('v1', [
         // 显示话题
         $api->get('topics/{topic}', 'TopicsController@show')
             ->name('api.topics.show');
+
+        // 话题回复列表
+        $api->get('topics/{topic}/replies', 'RepliesController@index')
+            ->name('api.topics.replies.index');
+
+        // 刷新token
+        $api->put('authorizations/current', 'AuthorizationsController@update')
+            ->name('api.authorizations.update');
+
+        // 删除token
+        $api->delete('authorizations/current', 'AuthorizationsController@destroy')
+            ->name('api.authorizations.destroy');
+
+        // 游客可以访问的接口
+        $api->get('categories', 'CategoriesController@index')
+            ->name('api.categories.index');
+
+        // 图片资源
+        $api->post('images', 'ImagesController@store')
+            ->name('api.images.store');
+
+        // 列出topic列表
+        $api->get('topics', 'TopicsController@index')
+            ->name('api.topics.index');
+
+        // 列出一个user所有的topics
+        $api->get('users/{user}/topics', 'TopicsController@userIndex')
+            ->name('api.users.topics.index');
+
+        // 列出一个user所有的replies
+        $api->get('users/{user}/replies', 'RepliesController@userIndex')
+            ->name('api.users.replies.index');
     });
 
     $api->group([
@@ -103,32 +135,16 @@ $api->version('v1', [
             // 发布回复
             $api->post('topics/{topic}/replies', 'RepliesController@store')
                 ->name('api.topics.replies.store');
+
+            // 删除回复
+            $api->delete('topics/{topic}/replies/{reply}', 'RepliesController@destroy')
+                ->name('api.topics.replies.destroy');
+
+            $api->delete('replies/{reply}', 'RepliesController@destroyByID')
+                ->name('api.topics.replies.destroy');
         });
     });
 
-    // 刷新token
-    $api->put('authorizations/current', 'AuthorizationsController@update')
-        ->name('api.authorizations.update');
-
-    // 删除token
-    $api->delete('authorizations/current', 'AuthorizationsController@destroy')
-        ->name('api.authorizations.destroy');
-
-    // 游客可以访问的接口
-    $api->get('categories', 'CategoriesController@index')
-        ->name('api.categories.index');
-
-    // 图片资源
-    $api->post('images', 'ImagesController@store')
-        ->name('api.images.store');
-
-    // 列出topic列表
-    $api->get('topics', 'TopicsController@index')
-        ->name('api.topics.index');
-
-    // 列出一个user所有的topics
-    $api->get('users/{user}/topics', 'TopicsController@userIndex')
-        ->name('api.users.topics.index');
 
 
 });
