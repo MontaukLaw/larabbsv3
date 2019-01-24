@@ -14,6 +14,7 @@ class TopicsController extends Controller
 {
     public function store(TopicRequest $request, Topic $topic)
     {
+        //return $this->errorResponse(403, '您还没有通过认证', 1003);
         //$this->authorize('update', $topic);
         $topic->fill($request->all());
         $topic->user_id = 1;
