@@ -97,6 +97,10 @@ $api->version('v1', [
         // 列出一个user所有的replies
         $api->get('users/{user}/replies', 'RepliesController@userIndex')
             ->name('api.users.replies.index');
+
+        // 资源推荐
+        $api->get('links', 'LinksController@index')
+            ->name('api.links.index');
     });
 
     $api->group([
