@@ -8,6 +8,8 @@ use Carbon;
 
 class UserTransformer extends TransformerAbstract
 {
+    protected $availableIncludes = ['roles'];
+
     public function transform(User $user)
     {
 //        \Log::debug('type is ' . gettype($user));
@@ -33,5 +35,10 @@ class UserTransformer extends TransformerAbstract
         ];
         //\Log::debug($result);
         return $result;
+    }
+
+    public function includeRoles(User $user)
+    {
+        return $this->collection($user->roles, new RoleTransformer());
     }
 }

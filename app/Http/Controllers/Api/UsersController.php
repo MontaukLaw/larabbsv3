@@ -7,6 +7,7 @@ use App\Models\User;
 use Illuminate\Http\Request;
 use App\Transformers\UserTransformer;
 use App\Http\Requests\Api\UserRequest;
+use App\Models\Property;
 
 class UsersController extends Controller
 {
@@ -48,6 +49,11 @@ class UsersController extends Controller
 
     public function me()
     {
+        // Property Test
+        //$property = new Property(2);
+        //\Log::debug('pro function is : '.$property->roles());
+        //\Log::debug('pro property is : '.$property->roles);
+
         return $this->response->item($this->user(), new UserTransformer());
     }
 
